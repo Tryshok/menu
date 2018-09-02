@@ -107,7 +107,7 @@
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
 			//this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">Retour</a></li>' );
-			$('<li style="background-color: #303030; padding-top: 8px; margin-top: -2px;" class="dl-back"><a class="show-navigation" style="border-bottom: 0px; background-color: #303030; color: white;" href="#">Retour</a></li>').insertAfter(this.$el.find( 'ul.dl-submenu > li.mobile-menu-li:last-child' ));
+			$('<li style="background-color: #cbcfd1; padding-top: 8px; margin-top: -2px;" class="dl-back"><a class="show-navigation" style="border-bottom: 0px; background-color: #cbcfd1; color: white;" href="#">Retour</a></li>').insertAfter(this.$el.find( 'ul.dl-submenu > li.mobile-menu-li:last-child' ));
 			this.$back = this.$menu.find( 'li.dl-back' );
 			
 		},
