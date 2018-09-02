@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>La Lignière - Menu</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="href=assets/bootstrap-dropdownhover/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+    <!--<link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/big-menu-mobile.css" />
+		<script src="js/modernizr.custom.js"></script>
+  </head>
+  
+  <body style="overflow-x:hidden;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap-submenu.css">
+    <script src="dist/js/bootstrap-submenu.js" defer></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <!-- PC -->
+    <div class="row" style="background-color: #F4F4F4;">
+      <div class="row top-bar hide-on-mobile">
+        <div class="col-sm-10">
+            <a class="top-bar-link" href="/plan-d-acces/">Plan d'accès</a>
+            <a class="top-bar-link" href="/contact/">Contact</a>
+            <a class="top-bar-link" href="/la-ligniere-et-vous/travailler/nos-offres-d-emploi/">Recrutement</a>
+            <a class="top-bar-link connexion" href="https://intranet2.la-ligniere.ch/accueil/">Connexion</a>
+            <i class="fab fa-facebook-f top-bar-icon"></i>
+            <i class="fab fa-twitter top-bar-icon"></i>
+            <i class="fab fa-vimeo-v top-bar-icon"></i>
+            <i class="fab fa-linkedin-in top-bar-icon"></i>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+    <div  class="row" style="background-color: white;">
+        <div id="sticky-big-screen" class="row hide-on-mobile display-on-big-screen">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10">
+                <div class="row hide-on-mobile menu-bar">
+                    <div class="col-sm-2">
+                        <a href="https://www.la-ligniere.ch/">
+                          <img class="img-header" width="auto" height="auto" src="https://www.la-ligniere.ch/wp-content/uploads/2017/05/la-ligniere-logo-196x39.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row custom-row">   
+                            <div class="col-sm-2 custom-col">
+                              <button class="btn btn-default custom-menu title accueil" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='https://www.la-ligniere.ch/'">
+                                Accueil 
+                              </button>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                    <button class="btn btn-default custom-menu title clinique-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/clinique/'">
+                                     Clinique
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom">
+                                      <div class="col-sm-7" style="margin-top: 63px;">
+                                        <li><a class="clinique" href="/clinique/readaptation-cardio/">Réadaptation Caridovasculaire</a></li>
+                                        <li><a class="clinique" href="/clinique/readaptation-neurologique-orthopedique-rhumatologique/">Réadaptation neurologique, othopédique et rhumatologique</a></li>
+                                        <li><a class="clinique" href="/clinique/unite-de-psychiatrie/">Unité de psychiatrie</a></li>
+                                        <li><a class="clinique" href="/clinique/medecine-interne/">Médecine interne</a></li>
+                                        <li><a class="clinique" href="/clinique/aumonerie/">Aumônerie</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #009078; height: 312px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-clinique-rdv" type="button" onclick="location.href='/clinique/espace-visiteurs/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 155px;">
+                                          <div class="row" style="margin-top: 7px;">
+                                            <img src="file:///C:/Users/carpe/Downloads/multiple-users-silhouette.svg" width="50px;">  
+                                          </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-clinique-rdv" style="color: white;" href="/clinique/espace-visiteurs/">Espace visiteurs</a>
+                                          </div>
+                                        </button>
+                                          <hr style="width: 100%; border-top: solid 1px white; margin-top: 25px;"/>
+                                          <button class="btn btn-default btn-clinique-medecin" type="button" onclick="location.href='/clinique/admission-a-la-clinique/'" style="margin-top: -20px; background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 155px;">
+                                          <div class="row" style="margin-top: 7px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-tel-bandeau-01.png" width="40px;">  
+                                            </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-clinique-medecin" style="color: white;" href="/clinique/admission-a-la-clinique/">Votre admission<br> à la clinique</a>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                      <button class="btn btn-default custom-menu title medical-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/centre-medical-et-therapeutique-2/'">
+                                        Centre médical & Thérapeutique
+                                      </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom">
+                                      <div class="col-sm-7">
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/coronary-club/">Coronary Club</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/dietetique/">Diététique</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/ergotherapie/">Ergothérapie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/neuropsychologie-logopedie/">Neuropsychologie - Logopédie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/osteopathie/">Ostéopathie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/pole-diabete/">Pôle diabète</a></li>
+                                          <ul>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/pole-diabete/diafood-diafit/">>&nbsp;&nbsp;Diafood Diafit</a></li>
+                                          </ul>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/">Physiothérapie</a></li>
+                                          <ul>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#orthopedie-et-rhumatologie">>&nbsp;&nbsp;Orthopédie et rhumatologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#neurologie">>&nbsp;&nbsp;Neurologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#hydrotherapie">>&nbsp;&nbsp;Hydrothérapie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#groupe-piscine">>&nbsp;&nbsp;Groupe piscine</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#pediatrie">>&nbsp;&nbsp;Pédiatrie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#perineologie">>&nbsp;&nbsp;Périnéologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#surftherapie">>&nbsp;&nbsp;Surfthérapie</a></li>
+                                          </ul>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/psychologie-psychotherapies/">Psychologie - Pshychothérapies</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/tabacologie/">Tabacologie</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #8EB71E; height: 529px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-medical-rdv" type="button" onclick="location.href='/centre-medical-et-therapeutique-2/prendre-rendez-vous/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -80px; height: 254px;">
+                                          <div class="row" style="margin-top: 3px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-calendrier-bandeau-01.png" width="50px;">  
+                                          </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                              <a class="text-medical-rdv" style="color: white;" href="/centre-medical-et-therapeutique-2/prendre-rendez-vous/">Prendre un RDV</a>
+                                          </div>
+                                        </button>
+                                          <hr style="width: 100%; border-top: solid 1px white; margin-top: 80px;"/>
+                                        <button class="btn btn-default btn-medical-medecin" type="button" onclick="location.href='/centre-medical-et-therapeutique-2/prendre-rendez-vous/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 254px;">
+                                          <div class="row" style="margin-top: -21px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-stetoscope-mega-menu1.png" width="50px;">  
+                                            </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-medical-medecin" style="color: white;" href="/medecins-et-specialisation/">Médecins et<br> spécialisation</a>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                    <button class="btn btn-default custom-menu title sante-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/centre-de-sante/'">
+                                      Centre de santé
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-custom-sante">
+                                      <div class="col-sm-7">
+                                        <li><a class="sante" href="/centre-de-sante/fitness/">Fitness & Cours collectifs</a></li>
+                                        <ul>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#salle-de-gym-et-cours-collectifs">>&nbsp;&nbsp;Salle de gym &<br>&nbsp;&nbsp;&nbsp;&nbsp;Cours collectifs</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#saunas">>&nbsp;&nbsp;Saunas</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#salle-entrainement-coaching">>&nbsp;&nbsp;Salle d'entraînement et<br>&nbsp;&nbsp;&nbsp;&nbsp;Coaching</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#aquagym">>&nbsp;&nbsp;Aquagym</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#tarifs">>&nbsp;&nbsp;Tarifs</a></li>
+                                        </ul>
+                                        <li><a class="sante" href="/centre-de-sante/ecole-de-natation/">École de natation</a></li>
+                                        <li><a class="sante" href="/centre-de-sante/coaching/">Coaching</a></li>
+                                        <li><a class="sante" href="/centre-de-sante/massages/">Massages</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #3AB0E5; height: 326px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-sante-rdv" type="button" onclick="location.href='/resamania/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 326px;"> 
+                                          <div class="row" style="margin-top: -12px;">
+                                                <img src="https://www.la-ligniere.ch/wp-content/uploads/2017/05/la-ligniere-pictogramme-blanc-groupe-piscine.png" width="50px;">  
+                                              </div>
+                                            <div class="row" style="margin-top: 20px;">
+                                              <a class="text-sante-rdv" style="color: white;" href="/resamania/">S'inscrire à l'aquagym</a>
+                                            </div>
+                                          </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                    <button class="btn btn-default custom-menu title accueil" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/la-ligniere-et-vous/'">
+                                      La lignière et vous?
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
+                                        <div class="col-sm-7">
+                                          <p class="titre-la-ligniere-et-vous">Qui somme-nous?</p>
+                                          <hr style="width: 30%; border-top: solid 1px #303030; margin-left: 0px; margin-top: 15px;"/>
+                                          <p class="sous-titre-la-ligniere-et-vous">Historique</p>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/historique/notre-source/">Notre source</a></li>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/historique/affiliation-et-partenaires/">Affiliation et partenaires</a></li>
+                                          <br><p class="sous-titre-la-ligniere-et-vous">Nos valeurs</p>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/nos-valeurs/developpement-durable/">Développment durable</a></li>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/nos-valeurs/politique-d-entreprise/">Politique d'entreprise</a></li>
+                                          <br><li><a class="sous-titre-la-ligniere-et-vous" href="/la-ligniere-et-vous/publications-et-actualites/">Publications</a></li>
+                                          <br><br><p class="titre-la-ligniere-et-vous">Travailler</p>
+                                          <hr style="width: 30%; border-top: solid 1px #303030; margin-left: 0px; margin-top: 15px;"/>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/travailler/nos-offres-d-emploi/">Nos offres d'emploi</a></li>
+                                          <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/travailler/demande-de-stage/">Demande de stage</a></li>
+                                          <li><a class="ligniere-et-vous" href="https://intranet2.la-ligniere.ch/accueil/">Formations internes</a></li>
+                                        </div>
+                                        <div class="col-sm-5" style="background-color: #303030; height: 518px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                          <p style="padding-top: 6px;"><a href="/la-ligniere-et-vous/nos-espaces-de-vie/" class="titre-la-ligniere-et-vous" style="color: white;">Espace de vie</a></p>
+                                          <div class="row"  style="margin-top: 60px;">
+                                            <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#bloc-breadcrumb">
+                                              <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/notre-restaurant.png" width="32px;"></div>
+                                              <div class="col-xs-8" style="text-align: left; margin-top: 7px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Notre restaurant</div>
+                                            </a>
+                                          </div>
+                                          <hr style="width: 80%; border-top: solid 1px white; margin-top: 60px;"/>
+                                          <div class="row"  style="margin-top: 60px;">
+                                            <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#salon-de-coiffure">
+                                              <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/salon-coiffure.png" width="32px;"></div>
+                                              <div class="col-xs-8" style="text-align: left; margin-top: -2px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Notre salon de coiffure</div>
+                                            </a>
+                                          </div>
+                                          <hr style="width: 80%; border-top: solid 1px white; margin-top: 60px;"/>
+                                          <div class="row"  style="margin-top: 72px; margin-left: 0px;">
+                                            <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#activites-culturelles">
+                                              <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/activites-culturelles.png" width="32px;"></div>
+                                              <div class="col-xs-8" style="text-align: left; margin-top: -4px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Activités <br>culturelles</div>
+                                            </a>
+                                          </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                              <button class="btn btn-default custom-menu title admissionRDV" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/admission-et-rendez-vous/'">
+                                Admission et RDV
+                              </button>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+        <div id="sticky-medium-screen" class="row hide-on-mobile display-on-medium-screen custom-row">
+            <div class="col-sm-12 custom-col">
+                <div class="row hide-on-mobile menu-bar custom-row">
+                    <div class="col-sm-2">
+                        <a href="https://www.la-ligniere.ch/">
+                          <img class="img-header" width="auto" height="auto" src="https://www.la-ligniere.ch/wp-content/uploads/2017/05/la-ligniere-logo-196x39.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-10" style="padding-left: 0px; padding-right: 0px;">
+                        <div class="row custom-row">   
+                          <div class="col-sm-2 custom-col">
+                              <button class="btn btn-default custom-menu title accueil" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='https://www.la-ligniere.ch/'">
+                                Accueil 
+                              </button>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                    <button class="btn btn-default custom-menu title clinique-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/clinique/'">
+                                      Clinique
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom">
+                                      <div class="col-sm-7" style="margin-top: 63px;">
+                                        <li><a class="clinique" href="/clinique/readaptation-cardio/">Réadaptation Caridovasculaire</a></li>
+                                        <li><a class="clinique" href="/clinique/readaptation-neurologique-orthopedique-rhumatologique/">Réadaptation neurologique, othopédique et rhumatologique</a></li>
+                                        <li><a class="clinique" href="/clinique/unite-de-psychiatrie/">Unité de psychiatrie</a></li>
+                                        <li><a class="clinique" href="/clinique/medecine-interne/">Médecine interne</a></li>
+                                        <li><a class="clinique" href="/clinique/aumonerie/">Aumônerie</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #009078; height: 312px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-clinique-rdv" type="button" onclick="location.href='/clinique/espace-visiteurs/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 155px;">
+                                          <div class="row" style="margin-top: 7px;">
+                                            <img src="file:///C:/Users/carpe/Downloads/multiple-users-silhouette.svg" width="50px;">  
+                                          </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-clinique-rdv" style="color: white;" href="/clinique/espace-visiteurs/">Espace visiteurs</a>
+                                          </div>
+                                        </button>
+                                          <hr style="width: 100%; border-top: solid 1px white; margin-top: 25px;"/>
+                                          <button class="btn btn-default btn-clinique-medecin" type="button" onclick="location.href='/clinique/admission-a-la-clinique/'" style="margin-top: -20px; background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 155px;">
+                                          <div class="row" style="margin-top: 7px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-tel-bandeau-01.png" width="40px;">  
+                                            </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-clinique-medecin" style="color: white;" href="/clinique/admission-a-la-clinique/">Votre admission<br> à la clinique</a>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                      <button class="btn btn-default custom-menu title medical-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/centre-medical-et-therapeutique-2/'">
+                                        Centre médical & Thérapeutique
+                                      </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom">
+                                      <div class="col-sm-7">
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/coronary-club/">Coronary Club</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/dietetique/">Diététique</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/ergotherapie/">Ergothérapie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/neuropsychologie-logopedie/">Neuropsychologie - Logopédie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/osteopathie/">Ostéopathie</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/pole-diabete/">Pôle diabète</a></li>
+                                          <ul>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/pole-diabete/diafood-diafit/">>&nbsp;&nbsp;Diafood Diafit</a></li>
+                                          </ul>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/">Physiothérapie</a></li>
+                                          <ul>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#orthopedie-et-rhumatologie">>&nbsp;&nbsp;Orthopédie et rhumatologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#neurologie">>&nbsp;&nbsp;Neurologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#hydrotherapie">>&nbsp;&nbsp;Hydrothérapie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#groupe-piscine">>&nbsp;&nbsp;Groupe piscine</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#pediatrie">>&nbsp;&nbsp;Pédiatrie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#perineologie">>&nbsp;&nbsp;Périnéologie</a></li>
+                                            <li class="menu-li-custom"><a class="medical" href="/centre-medical-et-therapeutique-2/physiotherapie/#surftherapie">>&nbsp;&nbsp;Surfthérapie</a></li>
+                                          </ul>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/psychologie-psychotherapies/">Psychologie - Pshychothérapies</a></li>
+                                          <li><a class="medical" href="/centre-medical-et-therapeutique-2/tabacologie/">Tabacologie</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #8EB71E; height: 529px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-medical-rdv" type="button" onclick="location.href='/centre-medical-et-therapeutique-2/prendre-rendez-vous/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -80px; height: 254px;">
+                                          <div class="row" style="margin-top: 3px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-calendrier-bandeau-01.png" width="50px;">  
+                                          </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                              <a class="text-medical-rdv" style="color: white;" href="/centre-medical-et-therapeutique-2/prendre-rendez-vous/">Prendre un RDV</a>
+                                          </div>
+                                        </button>
+                                          <hr style="width: 100%; border-top: solid 1px white; margin-top: 80px;"/>
+                                        <button class="btn btn-default btn-medical-medecin" type="button" onclick="location.href='/centre-medical-et-therapeutique-2/prendre-rendez-vous/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 254px;">
+                                          <div class="row" style="margin-top: -21px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/picto-stetoscope-mega-menu1.png" width="50px;">  
+                                            </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-medical-medecin" style="color: white;" href="/medecins-et-specialisation/">Médecins et<br> spécialisation</a>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                                <div class="dropdown">
+                                    <button class="btn btn-default custom-menu title sante-big-title" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/centre-de-sante/'">
+                                      Centre de santé
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-custom-sante dropdown-menu-right">
+                                      <div class="col-sm-7">
+                                        <li><a class="sante" href="/centre-de-sante/fitness/">Fitness & Cours collectifs</a></li>
+                                        <ul>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#salle-de-gym-et-cours-collectifs">>&nbsp;&nbsp;Salle de gym &<br>&nbsp;&nbsp;&nbsp;&nbsp;Cours collectifs</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#saunas">>&nbsp;&nbsp;Saunas</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#salle-entrainement-coaching">>&nbsp;&nbsp;Salle d'entraînement et<br>&nbsp;&nbsp;&nbsp;&nbsp;Coaching</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#aquagym">>&nbsp;&nbsp;Aquagym</a></li>
+                                          <li class="menu-li-custom"><a class="sante" href="/centre-de-sante/fitness/#tarifs">>&nbsp;&nbsp;Tarifs</a></li>
+                                        </ul>
+                                        <li><a class="sante" href="/centre-de-sante/ecole-de-natation/">École de natation</a></li>
+                                        <li><a class="sante" href="/centre-de-sante/coaching/">Coaching</a></li>
+                                        <li><a class="sante" href="/centre-de-sante/massages/">Massages</a></li>
+                                      </div>
+                                      <div class="col-sm-5" style="background-color: #3AB0E5; height: 326px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                        <button class="btn btn-default btn-sante-rdv" type="button" onclick="location.href='/resamania/'" style="background-color: transparent;  border: solid 0px transparent; width: 208px; margin-bottom: -26px; height: 326px;"> 
+                                        <div class="row" style="margin-top: -12px;">
+                                              <img src="https://www.la-ligniere.ch/wp-content/uploads/2017/05/la-ligniere-pictogramme-blanc-groupe-piscine.png" width="50px;">  
+                                            </div>
+                                          <div class="row" style="margin-top: 20px;">
+                                            <a class="text-sante-rdv" style="color: white;" href="/resamania/">S'inscrire à l'aquagym</a>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                              <div class="dropdown">
+                                <button class="btn btn-default custom-menu title accueil" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/la-ligniere-et-vous/'">
+                                  La lignière et vous?
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
+                                    <div class="col-sm-7">
+                                      <p class="titre-la-ligniere-et-vous">Qui somme-nous?</p>
+                                      <hr style="width: 30%; border-top: solid 1px #303030; margin-left: 0px; margin-top: 15px;"/>
+                                      <p class="sous-titre-la-ligniere-et-vous">Historique</p>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/historique/notre-source/">Notre source</a></li>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/historique/affiliation-et-partenaires/">Affiliation et partenaires</a></li>
+                                      <br><p class="sous-titre-la-ligniere-et-vous">Nos valeurs</p>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/nos-valeurs/developpement-durable/">Développment durable</a></li>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/nos-valeurs/politique-d-entreprise/">Politique d'entreprise</a></li>
+                                      <br><li><a class="sous-titre-la-ligniere-et-vous" href="/la-ligniere-et-vous/publications-et-actualites/">Publications</a></li>
+                                      <br><br><p class="titre-la-ligniere-et-vous">Travailler</p>
+                                      <hr style="width: 30%; border-top: solid 1px #303030; margin-left: 0px; margin-top: 15px;"/>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/travailler/nos-offres-d-emploi/">Nos offres d'emploi</a></li>
+                                      <li><a class="ligniere-et-vous" href="/la-ligniere-et-vous/travailler/demande-de-stage/">Demande de stage</a></li>
+                                      <li><a class="ligniere-et-vous" href="https://intranet2.la-ligniere.ch/accueil/">Formations internes</a></li>
+                                    </div>
+                                    <div class="col-sm-5" style="background-color: #303030; height: 518px; margin-top: -5px; margin-bottom: -5px; text-align: center; padding-right: 0px; padding-left: 0px;">
+                                      <p style="padding-top: 6px;"><a href="/la-ligniere-et-vous/nos-espaces-de-vie/" class="titre-la-ligniere-et-vous" style="color: white;">Espace de vie</a></p>
+                                      <div class="row"  style="margin-top: 60px;">
+                                        <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#bloc-breadcrumb">
+                                          <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/notre-restaurant.png" width="32px;"></div>
+                                          <div class="col-xs-8" style="text-align: left; margin-top: 7px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Notre restaurant</div>
+                                        </a>
+                                      </div>
+                                      <hr style="width: 80%; border-top: solid 1px white; margin-top: 60px;"/>
+                                      <div class="row"  style="margin-top: 60px;">
+                                        <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#salon-de-coiffure">
+                                          <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/salon-coiffure.png" width="32px;"></div>
+                                          <div class="col-xs-8" style="text-align: left; margin-top: -2px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Notre salon de coiffure</div>
+                                        </a>
+                                      </div>
+                                      <hr style="width: 80%; border-top: solid 1px white; margin-top: 60px;"/>
+                                      <div class="row"  style="margin-top: 72px; margin-left: 0px;">
+                                        <a class="ligniere-et-vous ligniere-et-vous-sous-titre" href="/la-ligniere-et-vous/nos-espaces-de-vie/#activites-culturelles">
+                                          <div class="col-xs-4" style="text-align: right; padding-right: 0px;"><img src="https://www.la-ligniere.ch/wp-content/uploads/2018/08/activites-culturelles.png" width="32px;"></div>
+                                          <div class="col-xs-8" style="text-align: left; margin-top: -4px; font-family: 'Montserrat'; font-size: 13px; padding-left: 9px;">Activités <br>culturelles</div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </ul>
+                              </div>
+                            </div>
+                            <div class="col-sm-2 custom-col">
+                              <button class="btn btn-default custom-menu title admissionRDV" type="button" data-toggle="dropdown" data-hover="dropdown" onclick="location.href='/admission-et-rendez-vous/'">
+                                Admission et RDV
+                              </button>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MOBILE -->
+    <div class="row custom-row show-on-mobile">
+      <div class="col-xs-2 custom-col" style="width: 16.66666667% !important; text-align: center;">
+        <div id="dl-menu" class="dl-menuwrapper">
+            <button class="dl-trigger">Open Menu</button>
+            <ul class="dl-menu" style="border-right: solid 1px black; border-bottom: 1px solid black;">
+              <li class="mobile-menu-li" style="height: 57px; padding-top: 9px;">
+                <a href="https://www.la-ligniere.ch/">Accueil</a>
+              </li>
+              <li id="clinique-arrow" class="mobile-menu-li" style="height: 47px; padding-top: 0px;">
+                <button id="navigation-clinique2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 238px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/clinique/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Clinique</span></button>                          
+                <a id="navigation-clinique1" href="" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                <ul class="dl-submenu" style="border-right: 1px solid black;">
+                  <li class="mobile-menu-li" style="margin-top: -1px; width: 50%; height: 80px; background-color: #009078; cursor: pointer;">
+                    <a style="text-align: center; padding-top: 27px; color: white; border-bottom: 0px; height: 80px;" href="/clinique/espace-visiteurs/">Espace visiteurs</a>
+                  </li>
+                  <li class="mobile-menu-li" style="position: absolute; top: 0px; left: 140px; height: 80px; background-color: #33A693; width: 50%; cursor: pointer;">
+                    <a style="text-align: center; padding-top: 17px; color: white; border-bottom: 0px; height: 80px;" href="/clinique/admission-a-la-clinique/">Admission à la clinique</a>
+                  </li>
+                  <li class="mobile-menu-li" style="border: 0px;"><a href="/clinique/readaptation-cardio/">Réadaptation Caridovasculaire</a></li>
+                  <li class="mobile-menu-li" style="height: 78px;"><a style="height: 74px;" href="/clinique/readaptation-neurologique-orthopedique-rhumatologique/">Réadaptation neurologique,<br> othopédique et<br> rhumatologique</a></li>
+                  <li class="mobile-menu-li"><a href="/clinique/unite-de-psychiatrie/">Unité de psychiatrie</a></li>
+                  <li class="mobile-menu-li"><a href="/clinique/medecine-interne/">Médecine interne</a></li>
+                  <li class="mobile-menu-li"><a href="/clinique/aumonerie/">Aumônerie</a></li>
+                </ul>
+              </li>
+              <li id="centre-medical-arrow" class="mobile-menu-li" style="margin-bottom: 18px; height: 57px; border-bottom: solid 1px black;">
+                <button id="navigation-centre-medical2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 238px; height: 53px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/centre-medical-et-therapeutique-2/'"><span style="color: #303030; text-indent: 0em !important; height: 53px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Centre médical &<br> Thératpeutique</span></button>                          
+                <a id="navigation-centre-medical1" href="" style=" height: 53px; border-bottom: solid 0px black; margin-top: -51px; width: 38px; margin-left: 242px;"></a>  
+                <ul class="dl-submenu" style="border-right: 1px solid black;">
+                  <li class="mobile-menu-li" style="margin-top: -1px; width: 50%; height: 80px; background-color: #8EB71E; cursor: pointer;">
+                    <a style="text-align: center; padding-top: 27px; color: white; border-bottom: 0px; height: 80px;" href="/centre-medical-et-therapeutique-2/prendre-rendez-vous/">Prendre RDV</a>
+                  </li>
+                  <li class="mobile-menu-li" style="position: absolute; top: 0px; left: 140px; height: 80px; background-color: #A5C54B; width: 50%; cursor: pointer;">
+                    <a style="text-align: center; padding-top: 17px; color: white; border-bottom: 0px; height: 80px;" href="/medecins-et-specialisation/">Médecins et spécialisation</a>
+                  </li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/coronary-club/">Coronary Club</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/dietetique/">Diététique</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/ergotherapie/">Ergothérapie</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/neuropsychologie-logopedie/">Neuropsychologie - Logopédie</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/osteopathie/">Ostéopathie</a></li>
+                  <li class="mobile-menu-li" style="border-bottom: solid 1px black;">
+                    <button id="navigation-diabete2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 280px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/centre-medical-et-therapeutique-2/pole-diabete/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Pôle diabète</span></button>                          
+                    <a id="navigation-diabete1" href="" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                    <ul class="dl-submenu">
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/pole-diabete/diafood-diafit/">Diafood Diafit</a></li>
+                    </ul>
+                  </li>
+                  <li class="mobile-menu-li" style="border-bottom: solid 1px black;">
+                    <button id="navigation-physio2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 280px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/centre-medical-et-therapeutique-2/physiotherapie/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Physiothérapie</span></button>                          
+                    <a id="navigation-physio1" href="" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                    <ul class="dl-submenu">
+                      <li class="mobile-menu-li" style="margin-bottom: 15px;"><a style="height: 53px;" href="/centre-medical-et-therapeutique-2/physiotherapie/#orthopedie-et-rhumatologie">Orthopédie et<br>rhumatologie</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#neurologie">Neurologie</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#hydrotherapie">Hydrothérapie</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#groupe-piscine">Groupe piscine</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#pediatrie">Pédiatrie</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#perineologie">Périnologie</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/physiotherapie/#surftherapie">Surfthérapie</a></li>
+                    </ul>
+                  </li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/psychologie-psychotherapies/">Psychologie - Pshychothérapies</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-medical-et-therapeutique-2/tabacologie/">Tabacologie</a></li>
+                </ul>
+              </li>
+              <li id="centre-sante-arrow" class="mobile-menu-li" style="margin-top: -17px; border-bottom: solid 1px black; margin-bottom: 4px; height: 57px; padding-top: 9px;">
+                <button id="navigation-centre-sante2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 238px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/centre-de-sante/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Centre de santé</span></button>                          
+                <a id="navigation-centre-sante1" href="" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                <ul class="dl-submenu" style="border-right: 1px solid black;">
+                  <li class="mobile-menu-li" style="margin-top: 7px; width: 100%; height: 60px; background-color: #3AB0E5; cursor: pointer;">
+                      <a style="text-align: center; padding-top: 17px; color: white; border-bottom: 0px; height: 80px;" href="/resamania/">S'inscrire à l'aquagym</a>
+                  </li>
+                  <li class="mobile-menu-li" style="margin-bottom: 5px; border-bottom: solid 1px black;">
+                    <button id="navigation-fitness2" class="menu-mobile-avec-sous-menu" style="height: 35px; width: 280px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/centre-de-sante/fitness/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Fitness & Cours collectifs</span></button>                          
+                    <a id="navigation-fitness1" href="" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                    <ul class="dl-submenu">
+                      <li class="mobile-menu-li" style="margin-top: 14px; margin-bottom: 16px;"><a style="height: 53px;" href="/centre-de-sante/fitness/#salle-de-gym-et-cours-collectifs">Salle de gym &<br>Cours collectifs</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-de-sante/fitness/#saunas">Saunas</a></li>
+                      <li class="mobile-menu-li" style="margin-bottom: 16px;"><a style="height: 53px;" href="/centre-de-sante/fitness/#salle-entrainement-coaching">Salle d'entrainement<br>& Coaching</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-de-sante/fitness/#aquagym">Aquagym</a></li>
+                      <li class="mobile-menu-li"><a href="/centre-de-sante/fitness/#tarifs">Tarifs</a></li>
+                    </ul>
+                  </li>
+                  <li class="mobile-menu-li"><a href="/centre-de-sante/ecole-de-natation/">École de natation</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-de-sante/coaching/">Coaching</a></li>
+                  <li class="mobile-menu-li"><a href="/centre-de-sante/massages/">Massages</a></li>
+                </ul>
+              </li>
+              <li id="la-ligniere-et-vous" class="mobile-menu-li" style="width: 50%; height: 100px; background-color: #e6e6e6; cursor: pointer; margin-top: -4px; border-right: 1px solid black; border-bottom: 1px solid black;">
+                  <a style="text-align: center; padding-top: 29px; color: black; border-bottom: 0px; height: 80px;" href="/la-ligniere-et-vous/">La Lignière et vous?</a>
+                  <ul class="dl-submenu" style="width: 280px;">
+                    <li class="mobile-menu-li">
+                      <a href="#">Admissions</a>
+                      <ul class="dl-submenu">
+                        <li class="mobile-menu-li"><a href="/clinique/admission-a-la-clinique/">Admission à la clinique</a></li>
+                        <li class="mobile-menu-li" style="margin-bottom: 16px;"><a style="height: 53px;" href="/centre-medical-et-therapeutique-2/prendre-rendez-vous/">RDV Centre Médical &<br>Thérapeutique</a></li>
+                        <li class="mobile-menu-li" style="height: 56px;"><a style="border-bottom: 0px;" href="/resamania/">Réservation aquagym<br>Centre de Santé</a></li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu-li">
+                      <button id="navigation-espace-de-vie2" class="menu-mobile-avec-sous-menu" style="height: 35px; border-bottom: solid 1px black; width: 280px; height: 36px; box-shadow: none !important; margin-top: -1px; padding-top: 5px; text-indent: 0em !important; text-align: left;" onclick="location.href='/la-ligniere-et-vous/nos-espaces-de-vie/'"><span style="color: #303030; text-indent: 0em !important; height: 36px; font-size: 16px; font-family: 'Montserrat'; font-weight: 300;">Espaces de vie</span></button>                          
+                      <a id="navigation-espace-de-vie1" href="/la-ligniere-et-vous/nos-espaces-de-vie/" style="border-bottom: solid 0px black; margin-top: -34px; width: 38px; margin-left: 242px;"></a>
+                      <ul class="dl-submenu">
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/nos-espaces-de-vie/#bloc-breadcrumb">Notre restaurant</a></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/nos-espaces-de-vie/#salon-de-coiffure">Notre salon de coiffure</a></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/nos-espaces-de-vie/#activites-culturelles">Activités culturelles</a></li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu-li">
+                      <a href="#">Qui sommes-nous?</a>
+                      <ul class="dl-submenu">
+                        <li class="mobile-menu-li" style="background-color: #D5D5D5; margin-top: -1px; padding-top: 5px;"><span style="font-size: 20px; font-family: 'Montserrat'; color: black;">Historique</span></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/historique/notre-source/">Nos valeurs</a></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/historique/affiliation-et-partenaires/">Affiliation et partenaires</a></li>
+                        <li class="mobile-menu-li" style="background-color: #D5D5D5; margin-top: -2px; padding-top: 5px;"><span style="font-size: 20px; font-family: 'Montserrat'; color: black;">Nos valeurs</span></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/nos-valeurs/developpement-durable/">Développement durable</a></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/nos-valeurs/politique-d-entreprise/">Politique d'entreprise</a></li>
+                        <li class="mobile-menu-li" style="background-color: #D5D5D5; margin-top: -2px; padding-top: 5px;"><a style="font-size: 20px; font-family: 'Montserrat'; color: black; text-align: center; font-weight: 500;" href="/la-ligniere-et-vous/publications-et-actualites/">Publications</a></li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu-li">
+                      <a href="#">Travailler</a>
+                      <ul class="dl-submenu">
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/travailler/nos-offres-d-emploi/">Nos offres d'emploi</a></li>
+                        <li class="mobile-menu-li"><a href="/la-ligniere-et-vous/travailler/demande-de-stage/">Demande de stage</a></li>
+                        <li class="mobile-menu-li"><a href="https://intranet2.la-ligniere.ch/accueil/">Formations internes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-li" style="position: absolute; top: 217px; left: 140px; height: 100px; background-color: #cbcfd1; width: 139px; cursor: pointer; border-bottom: 1px solid black;">
+                <a style="text-align: center; padding-top: 29px; color: black; border-bottom: 0px; height: 80px;" href="/plan-d-acces/">Plan<br>d'accès</a>
+              </li>
+              <li id="la-ligniere-et-vous" class="mobile-menu-li" style="width: 50%; height: 53px; cursor: pointer; border-right: 1px solid black;">
+                <a style="text-align: center; padding-top: 17px; color: black; border-bottom: 0px; height: 80px;" href="/la-ligniere-et-vous/">Contact</a>
+              </li>
+              <li class="mobile-menu-li" style="position: absolute; top: 317px; left: 140px; height: 53px; width: 139px; cursor: pointer;">
+                <a style="text-align: center; padding-top: 17px; color: black; border-bottom: 0px; height: 80px;" href="/plan-d-acces/">Connexion</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-xs-6 custom-col" style="width: 50% !important; text-align: center;">
+          <a href="https://www.la-ligniere.ch/">
+            <img class="img-header-mobile" width="auto" height="auto" src="https://www.la-ligniere.ch/wp-content/uploads/2017/05/la-ligniere-logo-196x39.png">
+          </a>
+      </div>
+      <div class="col-xs-4 custom-col" style="width: 33.33333333% !important; text-align: center;">
+        <button style="background-color: black; color: white; border: solid 0px transparent; font-size: 16px; height: 100px; font-family: 'Montserrat'; max-width: 100%; width: 100%;" onclick="location.href='/admission-et-rendez-vous/'">
+          Admission<br> et RDV
+        </button>
+      </div>
+    </div>
+
+    <div class="content">
+        <h3>Sticky Navigation Example</h3>
+        <p>The navbar will stick to the top when you reach its scroll position.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        
+      </div>
+  </body>
+</html><script>
+    
+    $(function() {
+      $( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+				});
+    });
+    </script>
